@@ -1,0 +1,6 @@
+- name: Add accessible nodes to '/ect/hosts' files
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ hosts_aliases_nodes_ip[item] }} {{ item }}"
+  when: inventory_hostname != item
+  with_items: "{{ hosts_aliases_nodes_ip }}"
