@@ -1,0 +1,13 @@
+galaxy_info:
+    role_name: hosts-aliases
+    author: KYPO Team
+    description: Append nodes aliases to hosts file.
+    licence: MIT
+    min_ansible_version: 2.3
+    platforms:
+        - name: Debian
+          versions:
+              - all
+        - name: Ubuntu
+          versions:
+              - all
